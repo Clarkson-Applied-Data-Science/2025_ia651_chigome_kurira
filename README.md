@@ -78,7 +78,7 @@ The heatmap reveals the relationship between original features and principal com
 # Regression Analysis Approach
 For our laptop price prediction project, we implemented multiple regression techniques to evaluate which models best capture the complex relationships between laptop specifications and price. We started with linear regression as a baseline, then progressed to more sophisticated models like Ridge, Lasso, and Random Forest regression. This multi-model approach is essential because laptop pricing likely involves both linear and non-linear relationships between features. Some specifications may have straightforward linear effects on price (like RAM or storage capacity), while others might interact in complex ways or have diminishing returns (like the relationship between premium components and ultra-high-end pricing). By comparing different regression models, we can identify which approach best captures these market dynamics and provides the most accurate and interpretable predictions of laptop pricing factors.
 
-## Regression Models to Implement
+## Regression Models Implemented
 Linear Regression: To establish a baseline model and identify initial linear relationships
 
 Ridge Regression: To handle potential multicollinearity among laptop specifications
