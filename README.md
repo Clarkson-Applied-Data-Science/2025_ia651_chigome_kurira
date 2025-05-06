@@ -143,12 +143,10 @@ The neural network model offers yet another perspective on laptop price determin
 
 
 
-
-
-
-
 # Conclusion
-Our comprehensive analysis of multiple regression models for laptop price prediction reveals that Ridge regression delivers the best overall performance. With an impressive R² of 0.7855 and RMSE of 0.2915, Ridge regression effectively captures the complex relationships between laptop specifications and pricing while avoiding overfitting through optimal regularization (α=0.001). The model confirms our exploratory findings that brand premium (particularly gaming-focused manufacturers like Razer) and high-performance components (especially RAM and Intel Core i7 processors) are the strongest price determinants. Ridge regression outperforms Lasso in this context because laptop pricing benefits from retaining all relevant features with appropriate shrinkage rather than the sparse feature selection that Lasso provides. This Ridge model offers valuable insights for both consumers seeking to understand pricing structures and manufacturers optimizing product configurations in the competitive laptop market.
+Based on our comprehensive analysis of different regression models for laptop price prediction, XGBoost emerges as the superior model with the highest R² score (~0.80) and lowest RMSE (~0.25). Unlike the Random Forest model that heavily weighted RAM as the dominant factor, XGBoost identified a more balanced distribution of influential features including Weight, Company, PPI, and TotalStorage. This balanced feature importance aligns with our exploratory findings that laptop pricing is influenced by multiple interacting factors rather than dominated by a single specification.
+The XGBoost model successfully captures both linear and non-linear relationships while demonstrating excellent generalization capabilities, as evidenced by its learning curves. Its ability to identify physical attributes like weight (often associated with build quality and premium materials) alongside traditional specifications provides a more nuanced understanding of laptop pricing dynamics in the consumer market.
+For consumers, these findings suggest that when evaluating laptop prices, considering the manufacturer's brand positioning and physical build characteristics may be as important as comparing raw performance specifications. For manufacturers, the model highlights the significant impact of brand perception and physical design features on price positioning in addition to component-level specifications.
 
 
 
