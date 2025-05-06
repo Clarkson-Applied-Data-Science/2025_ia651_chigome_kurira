@@ -59,6 +59,21 @@ We conducted Principal Component Analysis for this laptop price analysis project
 ![image](https://github.com/user-attachments/assets/f0918644-d113-4986-930e-ac282006738b)
 ![image](https://github.com/user-attachments/assets/f50c2415-2e8c-476b-a0f4-944107f7d114)
 
+## Principal Component Correlation Analysis After PCA
+The heatmap reveals the relationship between original features and principal components, providing insight into what each Principal Component represents in the laptop dataset. PC1 shows strong positive correlations with Weight (0.59) and TotalStorage (0.49), while having negative correlations with TouchScreen and PPI (both -0.42), suggesting this component primarily distinguishes between heavier laptops with more storage versus lighter laptops with premium displays. PC2 correlates substantially with RAM (0.60), PPI (0.47), and IPS display (0.42), indicating it captures high-performance premium specifications. PC3 has a remarkably strong correlation with IPS display technology (0.84), suggesting this component specifically isolates display quality from other features. PC4 shows interesting contrasts, with a strong positive correlation to TouchScreen (0.60) but negative correlation to RAM (-0.50), potentially identifying budget touchscreen devices with lower performance specifications. This analysis confirms the PCA has effectively separated distinct aspects of laptop characteristics into interpretable components.
+![image](https://github.com/user-attachments/assets/acefe3a2-ffc4-41f3-bfac-e1b099043354)
+
+# Regression Analysis Approach
+For our laptop price prediction project, we implemented multiple regression techniques to evaluate which models best capture the complex relationships between laptop specifications and price. We started with linear regression as a baseline, then progressed to more sophisticated models like Ridge, Lasso, and Random Forest regression. This multi-model approach is essential because laptop pricing likely involves both linear and non-linear relationships between features. Some specifications may have straightforward linear effects on price (like RAM or storage capacity), while others might interact in complex ways or have diminishing returns (like the relationship between premium components and ultra-high-end pricing). By comparing different regression models, we can identify which approach best captures these market dynamics and provides the most accurate and interpretable predictions of laptop pricing factors.
+
+# Regression Models to Implement
+Linear Regression: To establish a baseline model and identify initial linear relationships
+Ridge Regression: To handle potential multicollinearity among laptop specifications
+Lasso Regression: To perform feature selection and identify the most critical price determinants
+Random Forest Regression: To capture non-linear relationships and feature interactions
+Gradient Boosting: To potentially improve predictive accuracy through ensemble methods
+
+
 
 
 
