@@ -102,6 +102,39 @@ The actual vs. predicted price plot demonstrates strong model performance with m
 ![image](https://github.com/user-attachments/assets/754496dc-014f-4429-b0f7-25bf0c0b8f52)
 ![image](https://github.com/user-attachments/assets/2f05e04a-0b7d-46d2-9af7-baeea5ae832f)
 
+## Lasso Regression Analysis
+The top graph demonstrates that our Lasso regression model achieves optimal performance at a very small regularization parameter (α = 0.000001), indicating minimal feature selection is required as most variables contribute meaningfully to laptop price prediction. The coefficient path plot below shows how feature coefficients evolve with increasing regularization strength, revealing that even at higher alpha values where some features are forced to zero, certain coefficients (likely representing premium brands and high-end specifications) persist with substantial magnitude, confirming their outsized importance in determining laptop prices.
+![image](https://github.com/user-attachments/assets/9a3426ff-7bf1-4a44-b0ae-7218b2d9d58c)
+
+## Ridge Regression Analysis
+The Ridge regression analysis achieved strong predictive performance with a test R² of 0.7855 (explaining nearly 79% of price variation) and a low RMSE of 0.2915, using an optimal regularization parameter of α=0.01 that balances model complexity and generalization. The coefficient plot and bar chart reinforce our earlier findings about brand importance, with premium manufacturers like Razer, LG, and Vero commanding the highest price premiums, followed by performance specifications like Intel Core i7 processors, while certain categorical variables (Notebook type, Chuwi brand) show negative coefficients, indicating they're associated with budget-oriented pricing.
+![image](https://github.com/user-attachments/assets/bad46f1f-8c60-4b67-9ae4-9a120cc4ef1b)
+
+## Ridge Regression Hyperparameter Tuning
+The grid search plot visualizes the process of finding the optimal regularization parameter (alpha) for our Ridge regression model of laptop prices, showing error rates across a wide range of potential values. The results confirm that a very small alpha value of 0.001 (marked by the red dashed line) minimizes the cross-validation RMSE, with error remaining stable for smaller values but increasing dramatically beyond alpha=10, indicating that minimal regularization provides the best balance between bias and variance for this particular laptop pricing dataset.
+![image](https://github.com/user-attachments/assets/f314b014-5b1a-4f3f-8cf0-4361d715adce)
+![image](https://github.com/user-attachments/assets/232deed6-6f35-4f43-bcba-29339e65fbac)
+
+# Model Comparison
+Simple Linear Regression (TotalStorage only):
+  R² = 0.0373
+  RMSE = 0.6175
+
+Standard Linear Regression (all features):
+  R² = 0.7849
+  RMSE = 0.2919
+
+Ridge Regression (alpha = 0.0010):
+  R² = 0.7854
+  RMSE = 0.2915
+
+Ridge improvement over simple model: 2002.99% in R²
+Ridge improvement over standard linear regression: 0.07% in R²
+
+
+
+
+
 
 
 
