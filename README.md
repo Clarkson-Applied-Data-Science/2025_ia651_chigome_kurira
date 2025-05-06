@@ -5,7 +5,9 @@
 ## Project Overview
 This project analyzes the key factors influencing laptop prices in the Indian consumer market through statistical analysis and machine learning techniques. Using a comprehensive dataset of 1,273 laptop models with 13 distinct features, we aim to identify which specifications and characteristics have the most significant impact on pricing. Our analysis quantifies the relative importance of hardware components (such as RAM, storage capacity, and processor brands), physical attributes (weight, screen resolution), and additional features (touchscreen capability, display technology). The findings from this research provide valuable insights for both consumers making informed purchasing decisions and manufacturers optimizing their product pricing strategies in a competitive marketplace.
 
-## Dataset
+# Dataset
+
+## Variables
 The dataset for this project captures key hardware specifications and features that potentially impact the pricing of laptops in the consumer market. It was sourced from Kaggle, has 1,273 laptop models with 13 variables and they are as follows:
 
 - **Company**: Manufacturer of the laptop (e.g., Dell, HP, Apple)
@@ -21,6 +23,17 @@ The dataset for this project captures key hardware specifications and features t
 - **SSD**: Solid State Drive storage in GB
 - **Gpu_brand**: Graphics processing unit manufacturer
 - **Os**: Operating system installed on the laptop
+
+## Dataset Sample
+| **Company** | **TypeName** | **Ram** | **Weight** | **Price** | **TouchScreen** | **Ips** | **Ppi** | **Cpu_brand** | **HDD** | **SSD** | **Gpu_brand** | **Os** |
+|-------------|--------------|---------|------------|-----------|-----------------|---------|---------|---------------|---------|---------|--------------|--------|
+| Apple       | Ultrabook    | 8       | 1.37       | 11.17575  | 0               | 1       | 226.983 | Intel Core i5 | 0       | 128     | Intel        | Mac    |
+| Apple       | Ultrabook    | 8       | 1.34       | 10.77678  | 0               | 0       | 127.6779| Intel Core i5 | 0       | 0       | Intel        | Mac    |
+| HP          | Notebook     | 8       | 1.86       | 10.32993  | 0               | 0       | 141.212 | Intel Core i5 | 0       | 256     | Intel        | Others |
+| Apple       | Ultrabook    | 16      | 1.83       | 11.81448  | 0               | 1       | 220.5346| Intel Core i7 | 0       | 512     | AMD          | Mac    |
+| Apple       | Ultrabook    | 8       | 1.37       | 11.4731   | 0               | 1       | 226.983 | Intel Core i5 | 0       | 256     | Intel        | Mac    |
+| Acer        | Notebook     | 4       | 2.1        | 9.967026  | 0               | 0       | 100.4547| AMD Processor | 500     | 0       | AMD          | Windows|
+
 
 ## Process Overview
 The analysis of laptop price determinants began with extensive data preprocessing on our dataset of 1,273 laptop models. We first performed exploratory data analysis to understand variable distributions and relationships with price. This revealed initial patterns in how specifications like RAM, processor brands, and storage options correlate with pricing. We then cleaned the data by handling missing values, removing outliers, and encoding categorical variables like Company, CPU brand, and GPU brand to prepare for modeling.
