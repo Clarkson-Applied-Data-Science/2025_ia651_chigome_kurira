@@ -68,9 +68,13 @@ For our laptop price prediction project, we implemented multiple regression tech
 
 # Regression Models to Implement
 Linear Regression: To establish a baseline model and identify initial linear relationships
+
 Ridge Regression: To handle potential multicollinearity among laptop specifications
+
 Lasso Regression: To perform feature selection and identify the most critical price determinants
+
 Random Forest Regression: To capture non-linear relationships and feature interactions
+
 Gradient Boosting: To potentially improve predictive accuracy through ensemble methods
 
 
