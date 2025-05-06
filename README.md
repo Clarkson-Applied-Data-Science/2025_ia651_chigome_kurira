@@ -89,6 +89,23 @@ Random Forest Regression: To capture non-linear relationships and feature intera
 
 Gradient Boosting: To potentially improve predictive accuracy through ensemble methods
 
+## Linear Regression Analysis: Storage vs. Price
+The scatter plot examining the relationship between total storage capacity and laptop price reveals a surprisingly weak linear relationship, with an R² value of only 0.0233 and a correlation coefficient of 0.1525. This indicates that storage alone explains just 2.33% of the variance in laptop prices, suggesting it is not a strong independent predictor when considered in isolation. The regression line (y = 0.000199x + 10.7089) shows a very slight positive slope, confirming a minimal positive effect of increasing storage on price. More importantly, the color-coding by RAM size reveals a clear pattern where higher RAM configurations (represented by purple and pink dots) consistently appear in the upper price ranges regardless of storage capacity. This visualization effectively demonstrates that while storage has some influence on price, it must be considered alongside other specifications, particularly RAM, to accurately predict laptop pricing. This finding justifies our approach of using multiple regression models that can capture the combined effects of various specifications.
+![image](https://github.com/user-attachments/assets/47b6ab19-1ae1-4cf8-8cf4-097e8c1d1d47)
+
+## Feature Importance Analysis
+The feature importance chart reveals that brand affiliation has the strongest influence on laptop pricing, with premium gaming brands like Razer, Vero, and LG showing the highest coefficient values, indicating their significant price premiums regardless of specifications. Hardware specifications are also important determinants, with Intel Core i7 processors having a substantial impact on price, reinforcing our earlier correlation findings about processor tiers. The presence of categorical variables (company names, laptop types) among the top predictors suggests that market positioning and brand perception play critical roles in laptop pricing beyond just the hardware specifications consumers might initially focus on.
+![image](https://github.com/user-attachments/assets/7363f312-4d44-4c9c-869c-59890c650967)
+
+## Model Performance Analysis
+The actual vs. predicted price plot demonstrates strong model performance with most data points clustering closely along the diagonal line, indicating our regression model accurately captures the relationship between laptop specifications and pricing. Most predictions fall within a reasonable margin of error, though the model appears slightly less accurate at the extreme ends of the price spectrum, particularly for very high-end laptops where some underprediction occurs. The residual plot further validates model performance by showing residuals generally distributed around the zero line without strong patterns, suggesting our model has captured most systematic variations in the data without significant bias, though there are a few outliers in the premium segment (around the 12.5 price point) that were underpredicted by the model.RetryClaude can make mistakes. Please double-check responses. 3.7 Sonnet
+![image](https://github.com/user-attachments/assets/754496dc-014f-4429-b0f7-25bf0c0b8f52)
+![image](https://github.com/user-attachments/assets/2f05e04a-0b7d-46d2-9af7-baeea5ae832f)
+
+
+
+
+
 
 
 
