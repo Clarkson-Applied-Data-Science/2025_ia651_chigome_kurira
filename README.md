@@ -38,7 +38,7 @@ specifications to forecast prices accurately. By analyzing historical sales data
 generates reliable pricing insights for different configurations, enabling students to make more
 informed and budget-friendly purchasing decisions.
 
-## Project Overview
+# Project Overview
 This project analyzes the key factors influencing laptop prices in the Indian consumer market through statistical analysis and machine learning techniques. Using a comprehensive dataset of 1,273 laptop models with 13 distinct features, we aim to identify which specifications and characteristics have the most significant impact on pricing. Our analysis quantifies the relative importance of hardware components (such as RAM, storage capacity, and processor brands), physical attributes (weight, screen resolution), and additional features (touchscreen capability, display technology). The findings from this research provide valuable insights for both consumers making informed purchasing decisions and manufacturers optimizing their product pricing strategies in a competitive marketplace.
 
 # Dataset
