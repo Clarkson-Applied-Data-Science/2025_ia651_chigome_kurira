@@ -3,7 +3,7 @@
 # Smart Buy: Predicting Laptop Prices Using Machine Learning Techniques
 
 # INTRODUCTION
-In todays technology-driven world, personal laptops have become indispensable tools for
+In today's technology-driven world, personal laptops have become indispensable tools for
 students, professionals, and businesspeople across India. Among these users, students form a
 substantial part of the consumer base, relying heavily on laptops to support their education,
 complete assignments, attend online classes, and engage in research. However, many students in
