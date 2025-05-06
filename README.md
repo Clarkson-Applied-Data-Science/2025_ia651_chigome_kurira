@@ -48,7 +48,8 @@ The bar charts reveal distinct pricing patterns across laptop brands and compone
 
 ## Feature Importance Analysis
 The visualizations provide clear evidence of the most significant predictors of laptop prices in the consumer market. RAM shows the strongest positive linear relationship with price (visible in the clear upward trend line), confirming its role as a primary price determinant across all laptop categories. SSD storage similarly demonstrates a strong positive correlation (0.66), with increasing capacity consistently associated with higher price points. The box plots reveal substantial price variations by laptop type, with Workstations commanding the highest median prices, followed by Ultrabooks, while Netbooks occupy the budget segment. Processor brand exhibits a clear hierarchy, with Intel Core i7 associated with premium pricing. Among operating systems, Mac commands the highest price premium, while GPU analysis shows Nvidia graphics correlating with higher-priced models compared to Intel or AMD alternatives. These findings suggest that RAM, SSD capacity, laptop type, and processor tier are the most influential factors in determining laptop pricing.
-![image](https://github.com/user-attachments/assets/eb9ddce5-890a-42ed-947d-feca8bdd9e08)
+![image](https://github.com/user-attachments/assets/74bd0742-172d-4499-95d7-af5defd06515)
+
 ![image](https://github.com/user-attachments/assets/38af314e-8a3b-4666-ad5b-6e809fb62ff4)
 
 
