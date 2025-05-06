@@ -9,17 +9,29 @@ This project analyzes the key factors influencing laptop prices in the Indian co
 The dataset for this project captures key hardware specifications and features that potentially impact the pricing of laptops in the consumer market. It was sourced from Kaggle, has 1,273 laptop models with 13 variables and they are as follows:
 
 Company: Manufacturer of the laptop (Dell, HP, Apple)
+
 TypeName: Model name/series of the laptop
+
 Ram: Random Access Memory in GB
+
 Weight: Weight of the laptop in kg
+
 Price: Price of the laptop (target variable)
+
 TouchScreen: Binary indicator (1 = has touch screen, 0 = no touch screen)
+
 Ips: Binary indicator for IPS display technology (1 = has IPS, 0 = no IPS)
+
 Ppi: Pixels per inch, measuring screen resolution density
+
 Cpu_brand: Processor manufacturer (e.g., Intel, AMD)
+
 HDD: Hard Disk Drive storage in GB
+
 SSD: Solid State Drive storage in GB
+
 Gpu_brand: Graphics processing unit manufacturer
+
 Os: Operating system installed on the laptop
 
 ## Process Overview
