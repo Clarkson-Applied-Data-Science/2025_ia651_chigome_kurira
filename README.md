@@ -14,6 +14,7 @@ influence laptop prices, including processor type, RAM size, storage capacity, g
 capabilities, operating system, and display quality. For example, students pursuing degrees in
 engineering, architecture, or design may require more powerful laptops to run demanding
 software, which tend to be significantly more expensive.
+
 In their day today lives students encounter difficulties such as a university student may need a
 dependable laptop for online lectures, coding assignments, and project work. Yet, with prices
 ranging from under ₹30,000 to over ₹1,50,000, choosing the right laptop within a limited budget
@@ -26,10 +27,12 @@ laptop prices continue to climb, access to technology becomes more restricted fo
 economically weaker sections, deepening the digital divide in education. This divide can
 severely hinder academic progress and limit future opportunities for those unable to keep up with
 technological advancements.
+
 Moreover, declining laptop sales driven by rising prices may reduce manufacturers&#39; willingness
 to invest in innovation, slowing the development of more efficient and affordable devices. The
 consequences are far-reaching; as the job market grows increasingly digital, students without
 access to adequate technology risk being left behind.
+
 Our price prediction model leverages a comprehensive dataset encompassing various laptop
 specifications to forecast prices accurately. By analyzing historical sales data, the model
 generates reliable pricing insights for different configurations, enabling students to make more
