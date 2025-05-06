@@ -48,9 +48,18 @@ The bar charts reveal distinct pricing patterns across laptop brands and compone
 
 ## Feature Importance Analysis
 The visualizations provide clear evidence of the most significant predictors of laptop prices in the consumer market. RAM shows the strongest positive linear relationship with price (visible in the clear upward trend line), confirming its role as a primary price determinant across all laptop categories. SSD storage similarly demonstrates a strong positive correlation (0.66), with increasing capacity consistently associated with higher price points. The box plots reveal substantial price variations by laptop type, with Workstations commanding the highest median prices, followed by Ultrabooks, while Netbooks occupy the budget segment. Processor brand exhibits a clear hierarchy, with Intel Core i7 associated with premium pricing. Among operating systems, Mac commands the highest price premium, while GPU analysis shows Nvidia graphics correlating with higher-priced models compared to Intel or AMD alternatives. These findings suggest that RAM, SSD capacity, laptop type, and processor tier are the most influential factors in determining laptop pricing.
+![image](https://github.com/user-attachments/assets/c58173d6-6d1d-41f4-b412-65080cc41885)
+
 ![image](https://github.com/user-attachments/assets/74bd0742-172d-4499-95d7-af5defd06515)
 
 ![image](https://github.com/user-attachments/assets/38af314e-8a3b-4666-ad5b-6e809fb62ff4)
+
+## Principal Component Analysis 
+We conducted Principal Component Analysis for this laptop price analysis project to address the complexity and potential multicollinearity in our dataset. With 13 different variables potentially influencing laptop prices, many features likely have correlations with each other (such as RAM and storage capacities often increasing together in higher-end models). PCA transforms these potentially correlated features into a set of linearly uncorrelated variables called principal components, making the data structure more interpretable. This dimensionality reduction technique allowed us to identify the underlying patterns driving price variations without losing significant information. By compressing our dataset into fewer dimensions ( we combined HHD and SSD to create a new variable - Total_Storage), PCA also helped visualize complex relationships between features and laptop prices that would be difficult to observe in the original high-dimensional space.
+![image](https://github.com/user-attachments/assets/f0918644-d113-4986-930e-ac282006738b)
+![image](https://github.com/user-attachments/assets/f50c2415-2e8c-476b-a0f4-944107f7d114)
+
+
 
 
 
