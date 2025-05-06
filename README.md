@@ -131,6 +131,9 @@ Ridge Regression (alpha = 0.0010):
 Ridge improvement over simple model: 2002.99% in R²
 Ridge improvement over standard linear regression: 0.07% in R²
 
+# Conclusion
+Our comprehensive analysis of multiple regression models for laptop price prediction reveals that Ridge regression delivers the best overall performance. With an impressive R² of 0.7855 and RMSE of 0.2915, Ridge regression effectively captures the complex relationships between laptop specifications and pricing while avoiding overfitting through optimal regularization (α=0.001). The model confirms our exploratory findings that brand premium (particularly gaming-focused manufacturers like Razer) and high-performance components (especially RAM and Intel Core i7 processors) are the strongest price determinants. Ridge regression outperforms Lasso in this context because laptop pricing benefits from retaining all relevant features with appropriate shrinkage rather than the sparse feature selection that Lasso provides. This Ridge model offers valuable insights for both consumers seeking to understand pricing structures and manufacturers optimizing product configurations in the competitive laptop market.
+
 
 
 
