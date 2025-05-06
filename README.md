@@ -115,21 +115,37 @@ The grid search plot visualizes the process of finding the optimal regularizatio
 ![image](https://github.com/user-attachments/assets/f314b014-5b1a-4f3f-8cf0-4361d715adce)
 ![image](https://github.com/user-attachments/assets/232deed6-6f35-4f43-bcba-29339e65fbac)
 
-# Model Comparison
-Simple Linear Regression (TotalStorage only):
-  R² = 0.0373
-  RMSE = 0.6175
+##  Random Forest Model Analysis
+The Random Forest model offers an insightful perspective on laptop price determinants with a feature importance plot that substantially differs from our linear models. RAM stands out dramatically as the single most influential feature, accounting for nearly 60% of the model's predictive power, while other specifications like Weight, laptop type (Notebook), and PPI follow at much lower importance levels (around 7% each). The actual vs. predicted plot shows good alignment along the diagonal reference line, indicating strong predictive performance, though with slightly more scatter than our Ridge model, especially in the mid-price range. The residual plot reveals generally random distribution around zero, but with several notable outliers, particularly for higher-priced laptops where prediction errors of up to 0.7 log units occur. This suggests the Random Forest model, while capturing the dominant importance of RAM for pricing, may not handle premium segment pricing nuances as effectively as our Ridge regression model.
 
-Standard Linear Regression (all features):
-  R² = 0.7849
-  RMSE = 0.2919
+![image](https://github.com/user-attachments/assets/911647c4-b6d2-488b-bcdc-6c7869af0445)
+![image](https://github.com/user-attachments/assets/c02a52ef-1374-4dca-a424-365c18bb662f)
+![image](https://github.com/user-attachments/assets/b7fda8e9-79b3-42a1-915b-b47984f1a728)
 
-Ridge Regression (alpha = 0.0010):
-  R² = 0.7854
-  RMSE = 0.2915
+## XGBoost Model Analysis
+The XGBoost model demonstrates excellent performance for laptop price prediction, as shown in the learning curve where the cross-validation error steadily decreases to approximately 0.05 mean squared error with increasing training examples. The minimal gap between training and validation scores after about 600 examples indicates the model has achieved good generalization without overfitting. Interestingly, XGBoost's feature importance distribution differs significantly from both the linear models and Random Forest, with laptop Weight emerging as the dominant feature (importance score of 654), followed by Company (342), PPI (309), and TotalStorage (265). RAM, which was overwhelmingly dominant in the Random Forest model, ranks fifth in XGBoost's assessment. This suggests XGBoost is capturing different relationships in the data, potentially identifying that physical attributes like weight (often correlating with build quality and premium materials) and manufacturer brand premium are stronger price signals than previously recognized by other models.
+![image](https://github.com/user-attachments/assets/39574782-7de8-49f9-a021-804f9457bc5d)
+![image](https://github.com/user-attachments/assets/8101f12c-2deb-40fa-b0ba-560f3fe06245)
 
-Ridge improvement over simple model: 2002.99% in R²
-Ridge improvement over standard linear regression: 0.07% in R²
+
+## Neural Network Model Analysis
+The neural network model offers yet another perspective on laptop price determinants through different feature importance metrics. The first graph shows feature importance measured by decrease in R² when each feature is removed, revealing that laptop TypeName (the specific model category) is overwhelmingly the most influential factor, causing a 2.0+ decrease in R² when excluded. This is followed by GPU brand and operating system as distant second and third factors. This contrasts sharply with our other models, suggesting that neural networks detect more complex relationships where laptop category encapsulates multiple underlying premium factors. The training curves demonstrate excellent convergence behavior, with both MSE loss and MAE dropping rapidly within the first 5 epochs and stabilizing by epoch 10. The close alignment between training and validation metrics after convergence indicates good generalization without overfitting. The validation loss occasionally dipping below training loss suggests the model might benefit from slight regularization adjustment, but overall shows the neural network effectively learned the laptop pricing patterns.
+![image](https://github.com/user-attachments/assets/e4d99495-9f69-4677-a6d3-5f03cd84e128)
+![image](https://github.com/user-attachments/assets/60856d95-6d08-41cb-b96e-e1704a8df5c9)
+
+
+| Model Type | R² Score | RMSE | Key Features Identified | Strengths | Limitations |
+|------------|----------|------|------------------------|-----------|-------------|
+| Ridge Regression | 0.7855 | 0.2915 | Premium brands (Razer, LG, Vero), Intel Core i7 | Strong interpretability, handles multicollinearity well, identifies brand premium effects | Less effective at capturing non-linear relationships |
+| Random Forest | ~0.75* | ~0.30* | RAM (dominant at ~60%), Weight, Notebook type, PPI | Captures non-linear relationships, no assumptions about data distribution | Heavily weights RAM over other factors, slight overfitting for premium laptops |
+| XGBoost | ~0.80* | ~0.25* | Weight (654), Company (342), PPI (309), TotalStorage (265) | Best overall performance, balanced feature importance, excellent generalization | Slightly less interpretable than linear models |
+| Neural Network | ~0.78* | ~0.28* | TypeName (laptop category), GPU brand, OS | Quickly converges, captures complex category relationships | Treats laptop categories as more important than specific components |
+
+
+
+
+
+
 
 # Conclusion
 Our comprehensive analysis of multiple regression models for laptop price prediction reveals that Ridge regression delivers the best overall performance. With an impressive R² of 0.7855 and RMSE of 0.2915, Ridge regression effectively captures the complex relationships between laptop specifications and pricing while avoiding overfitting through optimal regularization (α=0.001). The model confirms our exploratory findings that brand premium (particularly gaming-focused manufacturers like Razer) and high-performance components (especially RAM and Intel Core i7 processors) are the strongest price determinants. Ridge regression outperforms Lasso in this context because laptop pricing benefits from retaining all relevant features with appropriate shrinkage rather than the sparse feature selection that Lasso provides. This Ridge model offers valuable insights for both consumers seeking to understand pricing structures and manufacturers optimizing product configurations in the competitive laptop market.
