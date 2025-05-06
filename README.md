@@ -1,6 +1,6 @@
 # 2025_ia651_chigome_kurira
 # Predictive Modeling for Laptop Purchases
-# # Smart Buy: Predicting Laptop Prices Using Machine Learning Techniques
+# Smart Buy: Predicting Laptop Prices Using Machine Learning Techniques
 
 # INTRODUCTION
 In todays technology-driven world, personal laptops have become indispensable tools for
