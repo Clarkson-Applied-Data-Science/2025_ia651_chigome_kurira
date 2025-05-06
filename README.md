@@ -52,7 +52,7 @@ The dataset for this project captures key hardware specifications and features t
 - **Weight**: Weight of the laptop in kg
 - **Price**: Price of the laptop (target variable)
 - **TouchScreen**: Binary indicator (1 = has touch screen, 0 = no touch screen)
-- **Ips**: Binary indicator for IPS display technology (1 = has IPS, 0 = no IPS)
+- **Ips**: (In-Plane Switching) Binary indicator for IPS display technology (1 = has IPS, 0 = no IPS)
 - **Ppi**: Pixels per inch, measuring screen resolution density
 - **Cpu_brand**: Processor manufacturer (e.g., Intel, AMD)
 - **HDD**: Hard Disk Drive storage in GB
